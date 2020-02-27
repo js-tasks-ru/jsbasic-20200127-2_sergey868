@@ -67,6 +67,23 @@
 
         let table = new SortableTable(rows);
         document.querySelector('.result').appendChild(table.el);
+        console.log(table);
+
+      /* rows.sort((a,b)=>{
+        a.name-b.name;
+        });
+        console.log(rows);*/
+      let arr=[];
+      for (let element of rows){
+
+      	arr.push(element.name);
+
+      }
+      console.log(arr);
+      arr.sort();
+     console.log(arr);
+      arr.reverse();
+      console.log(arr);
 
     </script>
 
